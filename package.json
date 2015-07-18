@@ -1,0 +1,27 @@
+{
+  "name": "mfp",
+  "version": "1.0.0-beta1",
+  "description": "MobileFirst Platform CLI Helper",
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/csantanapr/mfp-download.git"
+  },
+  "main": "index.js",
+  "bin": {
+    "mfp-download":"index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mfp",
+    "mobile",
+    "cloud",
+    "platform",
+    "cli"
+  ],
+  "author": "Carlos Santana",
+  "license": "Apache-2.0"
+}
