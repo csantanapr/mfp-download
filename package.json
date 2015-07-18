@@ -1,7 +1,7 @@
 {
-  "name": "mfp",
+  "name": "mobilefirst",
   "version": "1.0.0-beta1",
-  "description": "MobileFirst Platform CLI Helper",
+  "description": "MobileFirst Platform (mfp) CLI Helper",
   "repository": {
     "type": "git",
     "url": "https://github.com/csantanapr/mfp-download.git"
