@@ -1,6 +1,6 @@
 {
   "name": "mobilefirst",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0-beta3",
   "description": "MobileFirst Platform (mfp) CLI Helper",
   "repository": {
     "type": "git",

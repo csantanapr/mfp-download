@@ -3,7 +3,7 @@
 
 ### Install
 
-    npm install -g mfp@latest
+    npm install -g mobilefirst@latest
 
 ### Run
 
