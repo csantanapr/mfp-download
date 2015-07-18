@@ -1,10 +1,18 @@
 #!/usr/bin/env node
 var spawn = require('child_process').spawn,
-    mfp  = spawn('mfp',['-v'],{stdio:'inherit'});
-mfp.on('exit', function(code) {
-    if(code !== 0){
-      console.log("Download mfp CLI from http://public.dhe.ibm.com/ibmdl/export/pub/software/products/en/MobileFirstPlatform/mobilefirst_cli_installer_7.0.0.zip");
-    } else {
-      console.log("mfp cli installed, use: `mfp help` for more information");
-    }
-});
+    mfp,
+    dowloadUrl = "http://public.dhe.ibm.com/ibmdl/export/pub/software/products/en/MobileFirstPlatform/mobilefirst_cli_installer_7.0.0.zip",
+    downloadMessage = "Download mfp CLI from " + dowloadUrl,
+    helpMessage = "mfp cli installed, use: `mfp help` for more information",
+    isWin = /^win/.test(process.platform);
+if(isWin === false){
+  mfp  = spawn('which',['mfp'],{stdio:['ignore', 'ignore', 'ignore']});
+  mfp.on('exit', function(code) {
+      if(code !== 0){
+        console.log(downloadMessage);
+      } else {
+        spawn('mfp',['-v'],{stdio:['ignore', process.stdout, 'ignore']});
+        console.log(helpMessage);
+      }
+  });
+}
