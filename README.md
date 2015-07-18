@@ -4,3 +4,7 @@
 ### Install
 
     npm install -g mfp@latest
+
+### Run
+
+    mfp-download

@@ -8,7 +8,8 @@
   },
   "main": "index.js",
   "bin": {
-    "mfp-download": "index.js"
+    "mfp-download": "index.js",
+    "mobilefirst": "index.js"
   },
   "scripts": {
     "start": "node index.js",
